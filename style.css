@@ -1,52 +1,52 @@
 /* Global Variable*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html {
     font-size: 62.5%;
 }
-body{
-    font-family: 'Poppins', sans-serif; 
-
+body {
+    font-family: "Poppins", sans-serif;
 }
-h1{
+h1 {
     font-size: 2.6rem;
 }
-li,button,input,label{
-    font-size: 1.5rem;
-  
+li,
+button,
+input,
+label {
+    font-size: 2rem;
 }
-h2{
+h2 {
     font-size: 4.8rem;
 }
-h3{
+h3 {
     font-size: 3rem;
     font-weight: normal;
 }
-h4,h5{
+h4,
+h5 {
     font-size: 2.8rem;
 }
-a{
+a {
     text-decoration: none;
-    color: azure;
-   
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
 }
-button{
+button {
     padding: 1rem 5rem;
     background-color: #013f3c;
     border: none;
     cursor: pointer;
     color: white;
 }
-.main-head{
-    background-color: #1c3e42 ;
+.main-head {
+    background-color: #013f3c;
     color: rgb(255, 255, 255);
-   
 }
-nav{
-   
+nav {
     display: flex;
     width: 90%;
     padding: 1.5rem;
@@ -54,84 +54,90 @@ nav{
     margin: auto;
     align-items: center;
     flex-wrap: wrap;
- 
 }
-nav ul{
-  
+nav ul {
     display: flex;
     flex: 1 1 40rem;
     justify-content: space-around;
     align-items: center;
     list-style: none;
 }
-#logo{
+#logo {
     flex: 2 1 40rem;
-    font-family: 'Pattaya', sans-serif;
+    font-family: "Pattaya", sans-serif;
     font-weight: 400;
 }
-.hero{
-  
-    background: linear-gradient(rgba(0, 0, 0, 0.5),transparent) ,url(./img/hero.jpg);
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./img/hero.jpg);
     min-height: 90vh;
     color: rgb(255, 255, 255);
-     background-size: cover;
-     background-position: center;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.hero h2{
-    text-decoration: underline rgb(238, 62, 62);
+#main_title {
+    font-weight: 800;
+    text-decoration: underline red;
+    background-image: url(https://media.giphy.com/media/3oGRFHO6YQrxnnU5Ta/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
-.hero h3{
+.hero h3 {
     padding: 3rem;
- 
 }
-.location{
-    background:linear-gradient(rgba(0, 0, 0, 0.6),transparent) ,url(./img/location.jpg);
+#benefits {
+    background-image: url(https://media.giphy.com/media/7E6kuuyguIJ3YdzdGq/giphy.gif);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#location {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url(./img/location.jpg);
     min-height: 100vh;
     color: white;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
 }
-.cards{
-  
+.cards {
     width: 30rem;
     height: 50vh;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
     border-radius: 1rem;
-    
 }
-.cards:hover{
-    background: coral;
-}
-#card_title{
+
+#card_title {
     color: black;
 }
-@media  screen  and (max-width: 932px){
-    html{
+@media screen and (max-width: 932px) {
+    html {
         font-size: 45%;
     }
-    nav{
+    a {
+        font-size: 3rem;
+    }
+    nav {
         text-align: center;
     }
-     #logo{
-         padding: 1rem;
-     }
-     .cards{
-  
+    #logo {
+        padding: 1rem;
+    }
+    .cards {
         width: 30rem;
         height: 30vh;
         background-color: rgb(255, 255, 255);
         border-radius: 1rem;
-        
     }
-   
 }
