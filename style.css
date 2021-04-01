@@ -97,9 +97,23 @@ nav ul{
     background-position: center;
     display: flex;
     justify-content: center;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
-
+}
+.cards{
+  
+    width: 30rem;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    
+}
+.cards:hover{
+    background: coral;
+}
+#card_title{
+    color: black;
 }
 @media  screen  and (max-width: 932px){
     html{
@@ -111,5 +125,13 @@ nav ul{
      #logo{
          padding: 1rem;
      }
+     .cards{
+  
+        width: 30rem;
+        height: 30vh;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1rem;
+        
+    }
    
 }
