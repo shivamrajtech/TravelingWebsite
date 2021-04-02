@@ -17,7 +17,7 @@ li,
 button,
 input,
 label {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 h2 {
     font-size: 4.8rem;
@@ -65,7 +65,7 @@ nav ul {
 #logo {
     flex: 2 1 40rem;
     font-family: "Pattaya", sans-serif;
-    font-weight: 400;
+    font-weight: 800;
 }
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./img/hero.jpg);
@@ -80,8 +80,9 @@ nav ul {
     text-align: center;
 }
 #main_title {
-    font-weight: 800;
+    font-weight: 900;
     text-decoration: underline red;
+
     background-image: url(https://media.giphy.com/media/3oGRFHO6YQrxnnU5Ta/giphy.gif);
     background-size: cover;
     background-position: center;
@@ -92,13 +93,7 @@ nav ul {
 .hero h3 {
     padding: 3rem;
 }
-#benefits {
-    background-image: url(https://media.giphy.com/media/7E6kuuyguIJ3YdzdGq/giphy.gif);
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 #location {
     background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url(./img/location.jpg);
     min-height: 100vh;
@@ -106,10 +101,31 @@ nav ul {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
+    position: relative;
+    align-items: flex-start;
+}
+.location_head {
+    width: 90%;
+    margin: auto;
+}
+.location_head h2 {
+    padding: 1rem 0rem;
+    text-decoration: underline red;
+    background-image: url(https://media.giphy.com/media/3oGRFHO6YQrxnnU5Ta/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.location_head h3 {
+    padding: 3rem 0rem;
+}
+.cloud {
+    width: 40%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
 }
 .cards {
     width: 30rem;
@@ -126,7 +142,7 @@ nav ul {
         font-size: 45%;
     }
     a {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     nav {
         text-align: center;
