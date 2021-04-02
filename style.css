@@ -103,6 +103,7 @@ nav ul {
     display: flex;
     position: relative;
     align-items: flex-start;
+    overflow: hidden;
 }
 .location_head {
     width: 90%;
@@ -121,22 +122,32 @@ nav ul {
 .location_head h3 {
     padding: 3rem 0rem;
 }
+
 .cloud {
     width: 40%;
     position: absolute;
-    top: 0%;
+    top: 3%;
     right: 0%;
 }
-.cards {
-    width: 30rem;
-    height: 50vh;
-    background-color: rgb(253, 253, 253);
-    border-radius: 1rem;
+.moving-cloud1 {
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+    
+}
+.moving-cloud2 {
+    right: 10%;
+    animation: cloudAnimation 4s infinite alternate ease-in-out;
+
+    opacity: 0.5;
+}
+@keyframes cloudAnimation {
+    from {
+        transform: translate(10%, -10%);
+    }
+    to {
+        transform: translate(0%, 0%);
+    }
 }
 
-#card_title {
-    color: black;
-}
 @media screen and (max-width: 932px) {
     html {
         font-size: 45%;
@@ -150,10 +161,16 @@ nav ul {
     #logo {
         padding: 1rem;
     }
-    .cards {
-        width: 30rem;
-        height: 30vh;
-        background-color: rgb(255, 255, 255);
-        border-radius: 1rem;
+    .location_head h2 {
+        font-size: 2.4rem;
+        font-weight: 800;
+    }
+    .location_head h3 {
+        font-size: 2rem;
+    }
+    .cloud {
+        width: 70%;
+    }
+   
     }
 }
