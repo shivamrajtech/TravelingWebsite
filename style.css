@@ -47,7 +47,7 @@ button {
     font-size: 2rem;
 }
 .main-head {
-    background-color: #27394e;
+    background-color: #27394ee7;
     color: rgb(255, 255, 255);
 }
 nav {
@@ -72,7 +72,7 @@ nav ul {
     font-weight: 800;
 }
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./img/chris-lawton-KacRSybfczM-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./img/herobg.jpg);
     min-height: 90vh;
     color: rgb(255, 255, 255);
     background-size: cover;
@@ -106,7 +106,7 @@ nav ul {
     background-position: center;
     display: flex;
     position: relative;
-    align-items: flex-start;
+    align-items: center;
     overflow: hidden;
 }
 .location_head {
@@ -130,7 +130,7 @@ nav ul {
 .cloud {
     width: 40%;
     position: absolute;
-    top: 3%;
+    top: 0%;
     right: 0%;
 }
 .moving-cloud1 {
@@ -151,6 +151,9 @@ nav ul {
     }
 }
 /* benefits section*/
+#benefits {
+    min-height: 100vh;
+}
 .benefits-header {
     padding: 3rem;
     min-height: 30vh;
@@ -193,6 +196,45 @@ p {
 #icon {
     margin-top: 1rem;
     height: 10rem;
+}
+/*contact section*/
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(./img/contactbg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper {
+    background-color: rgba(19, 28, 39, 0.8);
+    color: white;
+    width: 60%;
+    border-radius: 20px;
+}
+.form-head {
+    text-align: center;
+    padding: 2rem;
+}
+.name-form,
+.email-form {
+    text-align: center;
+    padding: 2rem;
+}
+.form-wrapper label {
+    margin: 1rem 3rem;
+    font-size: 2rem;
+}
+.form-wrapper input {
+    padding: 5px 2rem;
+    border: none;
+    margin-top: 1rem;
+}
+.form-wrapper button {
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 @media screen and (max-width: 932px) {
     html {
