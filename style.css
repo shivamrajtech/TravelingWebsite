@@ -47,8 +47,11 @@ button {
     font-size: 2rem;
 }
 .main-head {
-    background-color: #27394ee7;
+    background-color: #27394e;
     color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 3;
 }
 nav {
     display: flex;
