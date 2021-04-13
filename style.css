@@ -239,6 +239,18 @@ p {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+footer {
+    background-color: #27394e;
+}
+.footer-sec {
+    display: flex;
+    width: 90%;
+    padding: 1.5rem;
+    min-height: 10vh;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
 @media screen and (max-width: 932px) {
     html {
         font-size: 45%;
